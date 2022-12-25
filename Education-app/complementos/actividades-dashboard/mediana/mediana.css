@@ -1,0 +1,49 @@
+:root {
+  /* variables para  las actividades de dashboard */
+  --main_titles: lime;
+  --secondary_titles: rgb(200, 6, 200);
+  --main_btns: rgb(255, 68, 0, 0.825);
+  --secondary_btns:#ebe2c1;
+  --main_texts: #ebe2c1;
+  --secondary_texts: orange;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: transparent;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    color: var(--main_titles);
+}
+
+h1 + p{
+    color: var(--main_texts);
+}
+
+label > h2, h3{
+    color: var(--secondary_titles);
+}
+
+input{
+     border-radius: 5px;
+     background: transparent;
+     text-align: center;
+     color: var(--secondary_texts);
+     text-shadow: 0 0 2px black;
+}
+
+button{
+  margin: 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--secondary_btns);
+  box-shadow: 0 0 10px black;
+}
+p, b{
+  color: var(--secondary_texts);
+}
