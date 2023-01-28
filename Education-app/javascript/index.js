@@ -164,6 +164,7 @@
         text8.style.display = "none";
         sectionSetting.style.display = "none";
     });
+    
     order.addEventListener('click', ()=>{
         text1.style.display = "none";
         sectionDasboard.style.display = "none";

@@ -36,31 +36,32 @@ body {
 }
 
 .sidebar {
-  top: 0;
+  position: fixed;
   left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   width: 68px;
-  /* height: 810px; */
+  max-height: 810px;
   background: #11101d;
-  padding: 6px 14px 20px;
+  padding: 6px 14px 56px;
   z-index: 99;
   transition: all 0.5s ease;
   opacity: 0.7;
-  position: absolute;
   box-sizing: border-box;
-  overflow-y: 0;
 }
 
 /* scrollbarr  */
-.sidebar:hover {
+/*.sidebar:hover {
   overflow-y: visible;
 }
 .sidebar::-webkit-scrollbar {
-  width: 8px;
+  width: 1px;
 }
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: #747474;
   border-radius: 5px;
-}
+}*/
 /* ------------------- */
 
 .sidebar.open {
@@ -143,8 +144,8 @@ body {
   line-height: 60px;
 }
 .sidebar .nav-list {
+  position: relative;
   margin-top: 120px;
-  height: 85%;
 }
 .sidebar li {
   position: relative;
@@ -294,15 +295,14 @@ body {
 }
 .sidebar .profile-details .name_job {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
-
 .sidebar .profile img {
   height: 45px;
-  width: 35px;
+  width: 40px;
   object-fit: cover;
   border-radius: 6px;
-  margin-right: 20px;
+  margin-right: 10px;
   box-shadow: 0 0 10px black;
 }
 .sidebar .profile .name,
@@ -329,7 +329,7 @@ body {
 }
 .sidebar.open .profile #log_out {
   width: 50px;
-  right: 5px;
+  right: 0;
   background: none;
 }
 
@@ -339,7 +339,8 @@ body {
 }
 .home-section {
   position: relative;
-  height: 100vh;
+  overflow-y: scroll;
+  height:100vh;
   top: 0;
   left: 70px;
   width: calc(100% - 78px);
@@ -358,7 +359,7 @@ body {
   width: 400px;
   transition: all 0.5s ease;
   text-shadow: 0px 0px 7px black;
-  /* z-index: 15; */
+  z-index: 10; 
 }
 .sidebar.open ~ .home-section .text1 {
   margin: 10px 0 0 182px;
@@ -369,7 +370,6 @@ body {
   flex-direction: row;
   margin-left: 34%;
   margin-top: -23px;
-  letter-spacing: 0px;
 }
 .home-section .text1 div #btnActivities {
   margin-right: -11px;
@@ -383,15 +383,30 @@ body {
   opacity: 0.6;
   cursor: pointer;
 }
-.home-section .text1 div li {
+.home-section .text1 div li{
   display: none;
-  align-items: center;
-  list-style: none;
+  justify-content:space-between;    
+  padding: 1px;
   margin-top: 5px;
+  margin-left: -5px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #12111d;
+  background: #12111dc6;
   transition: all 0.5s ease;
 }
 .home-section .text1 div li i {
-  margin-right: 4px;
+  display: flex;
+  font-size:28px ;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+.home-section .text1 div li i > p{
+    font-size: 10px;
+    transform: rotate(-90deg);
+    margin-left: -4px;
+}
+.home-section .text1 div li i:nth-child(2) > p{
+    margin-left: 0px;
 }
 .home-section-container1 {
   position: absolute;
@@ -402,7 +417,7 @@ body {
   color: mintcream;
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding:0;
 }
 
 /* seccion User */
@@ -611,10 +626,16 @@ body {
   .sidebar.open ~ .home-section {
     width: calc(100% - 250px);
   }
-
+  .home-section .text1 div li{
+      flex-direction: column;
+  }
+  home-section .text1 div li i{
+      margin-bottom: 2px ;
+  }
+  
   .home-section-container1 {
-    position: fixed;
-    max-width: 80%;
+    position: fixed;    
+    max-width: 80%;    
     text-align: justify center;
   }
   .home-section-container2 {
