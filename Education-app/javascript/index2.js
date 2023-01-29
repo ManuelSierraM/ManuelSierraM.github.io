@@ -5,6 +5,7 @@ const dashboardBtnPoints = document.querySelector('.bx-dots-horizontal-rounded')
 const dashboardActivities = document.querySelector('.dashboardList');
 const btnFiguras = document.querySelector('.bx-shape-triangle');
 const btnNomina = document.querySelector('.bx-id-card');
+
 //leyendo propiedades de la actividad "figuras geometricas" de dashboard
 const figuras = document.querySelector('#figuras-geometricas');
 const opcCuadrado = document.getElementById('opcCuadrado');
@@ -78,6 +79,7 @@ btnMediana.addEventListener('click', () =>{
     figuras.style.display = 'none';
     nomina.style.display = 'none';
 })
+
 
 //----Actividad de FIGURAS GEOMETRICAS
 //desplegando y limpiando areas de la actividad
