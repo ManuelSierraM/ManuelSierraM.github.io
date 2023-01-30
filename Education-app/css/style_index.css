@@ -40,7 +40,8 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  overflow-y: scroll;
+  overflow: auto;
+  overflow-x: hidden;
   width: 68px;
   max-height: 810px;
   background: #11101d;
@@ -50,20 +51,10 @@ body {
   opacity: 0.7;
   box-sizing: border-box;
 }
-
-/* scrollbarr  */
-/*.sidebar:hover {
-  overflow-y: visible;
-}
 .sidebar::-webkit-scrollbar {
   width: 1px;
+  background-color: transparent;
 }
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #747474;
-  border-radius: 5px;
-}*/
-/* ------------------- */
-
 .sidebar.open {
   width: 250px;
   opacity: 0.91;
@@ -86,7 +77,10 @@ body {
 }
 .sidebar .logo-details div {
   width: 54px;
-  height: 62px;
+  height: 55px;
+  margin-left: -6px;
+  margin-bottom: 7px;
+  border-radius: 0 0 10px 10px;
   background: #11101d;
   transition: all 0.5s ease;
 }
@@ -103,6 +97,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
+  margin: auto 0;
   transition: all 0.5s ease;
 }
 .sidebar.open .logo-details .icon,
@@ -111,7 +106,7 @@ body {
 }
 
 .sidebar.open .logo-details .icon {
-  margin-left: 35px;
+  margin-left: 43px;
   transition: all 0.5s ease;
 }
 .sidebar .logo-details #btn {
@@ -295,7 +290,7 @@ body {
 }
 .sidebar .profile-details .name_job {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 .sidebar .profile img {
   height: 45px;
@@ -339,13 +334,17 @@ body {
 }
 .home-section {
   position: relative;
-  overflow-y: scroll;
-  height:100vh;
+  overflow: auto;
+  height: 100vh;
   top: 0;
   left: 70px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
   z-index: 2;
+}
+.home-section::-webkit-scrollbar {
+  width: 1px;
+  background-color: transparent;
 }
 
 /* seccion Dashboard */
@@ -359,7 +358,7 @@ body {
   width: 400px;
   transition: all 0.5s ease;
   text-shadow: 0px 0px 7px black;
-  z-index: 10; 
+  z-index: 10;
 }
 .sidebar.open ~ .home-section .text1 {
   margin: 10px 0 0 182px;
@@ -383,30 +382,38 @@ body {
   opacity: 0.6;
   cursor: pointer;
 }
-.home-section .text1 div li{
+.home-section .text1 div li {
   display: none;
-  justify-content:space-between;    
+  justify-content: space-between;
   padding: 1px;
   margin-top: 5px;
   margin-left: -5px;
   border-radius: 5px;
-  box-shadow: 0 0 15px #12111d;
-  background: #12111dc6;
   transition: all 0.5s ease;
 }
 .home-section .text1 div li i {
   display: flex;
-  font-size:28px ;
+  font-size: 25px;
   text-align: left;
   margin: 0 0 10px 0;
+  color: #7c7979;
+  box-shadow: 0 0 15px #000;
+  background: #12111d52;
+  transition: zise 0.5s ease;
 }
-.home-section .text1 div li i > p{
-    font-size: 10px;
-    transform: rotate(-90deg);
-    margin-left: -4px;
+.home-section .text1 div li i:hover {
+  color: #fff;
+  font-size: 28px;
 }
-.home-section .text1 div li i:nth-child(2) > p{
-    margin-left: 0px;
+.home-section .text1 div li i > p {
+  font-size: 10px;
+  margin-left: -25px;
+  margin-top: 20px;
+  margin-right: 5px;
+  color: #5d5a5ae8;
+}
+.home-section .text1 div li i:nth-child(2) > p {
+  margin-left: -23px;
 }
 .home-section-container1 {
   position: absolute;
@@ -417,7 +424,7 @@ body {
   color: mintcream;
   width: 100%;
   height: 100%;
-  padding:0;
+  padding: 0;
 }
 
 /* seccion User */
@@ -626,16 +633,16 @@ body {
   .sidebar.open ~ .home-section {
     width: calc(100% - 250px);
   }
-  .home-section .text1 div li{
-      flex-direction: column;
+  .home-section .text1 div li {
+    flex-direction: column;
   }
-  home-section .text1 div li i{
-      margin-bottom: 2px ;
+  home-section .text1 div li i {
+    margin-bottom: 2px;
   }
-  
+
   .home-section-container1 {
-    position: fixed;    
-    max-width: 80%;    
+    position: fixed;
+    max-width: 80%;
     text-align: justify center;
   }
   .home-section-container2 {

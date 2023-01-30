@@ -105,9 +105,9 @@
       </li>
     </ul>
   </nav>
- <!--</header>-->
+  <!--</header>-->
 
- <!--SECCIONES DE LA PAGINA----------------------------------------------------------->
+  <!--SECCIONES DE LA PAGINA----------------------------------------------------------->
   <main class="home-section">
 
     <!--SECCION DASHBOARD----------->
@@ -117,9 +117,15 @@
         <i class='bx bx-caret-right' id="btnActivities"></i>
         <i class='bx bx-dots-horizontal-rounded'></i>
         <li class="dashboardList">
-          <i class='bx bx-shape-triangle activity'><p>Figuras</p></i>
-          <i class='bx bx-math activity'><p>Math</p></i>
-          <i class='bx bx-id-card activity'><p>Nomina</p></i>
+          <i class='bx bx-shape-triangle activity'>
+            <p>Figuras</p>
+          </i>
+          <i class='bx bx-math activity'>
+            <p>Math</p>
+          </i>
+          <i class='bx bx-id-card activity'>
+            <p>Nomina</p>
+          </i>
         </li>
       </div>
     </h2>
@@ -211,10 +217,10 @@
           <p id="resultadoCir" class="resultado">RESULTADO</p>
         </div>
       </div>
-      
+
       <!-- Actividad Mediana-->
       <div id="mediana">
-          <iframe src="complementos/actividades-dashboard/mediana/mediana.html"></iframe>
+        <iframe src="complementos/actividades-dashboard/mediana/mediana.html"></iframe>
       </div>
 
       <!--Actividad nomina----------------------->
@@ -222,7 +228,7 @@
 
         <h2> NOMINA </h2>
 
-        <p>cuarto taller del curso practico de javascript</p>        
+        <p>cuarto taller del curso practico de javascript</p>
         <br><br>
 
         <!-- botones  para  cada formulario del usuario -->
@@ -233,7 +239,7 @@
             empleado</button>
         </div>
         <hr>
-        
+
         <!-- Formulario para  registro de  horas  de meses anteriores -->
         <div class="nomAnteriores activityArea">
           <br>
@@ -273,14 +279,14 @@
             </ol>
           </div>
         </div>
-        
+
         <!-- Formulario para  registro de  horas  del mes actual -->
         <div class="nomActual activityArea">
           <br>
-          <h3 id="titlNomActual">Horas registradas en la nomina del mes actual </h3> 
-          <form name="formNomActual" >
+          <h3 id="titlNomActual">Horas registradas en la nomina del mes actual </h3>
+          <form name="formNomActual">
             <label>Fecha nomina <br>
-              <input id="dateIni" type="month"  name="dateIni">
+              <input id="dateIni" type="month" name="dateIni">
             </label>
             <br>
             <label>hasta<br>
@@ -296,7 +302,8 @@
             </label>
             <br>
             <button type="button" name="firstButton" onclick="registrar(document.formNomActual)">Ingresar Datos</button>
-            <button type="button" id="comparacionNomActual" name="secondButton" onclick="comparacion(document.formNomActualComp)">ir a comparacion</button>
+            <button type="button" id="comparacionNomActual" name="secondButton"
+              onclick="comparacion(document.formNomActualComp)">ir a comparacion</button>
           </form>
           <datalist id="hoursType">
             <option value="HOD">Horas Ordinarias Diurnas</option>
@@ -373,36 +380,36 @@
     <!-- SECCION USER -->
     <h2 class="text2">User</h2>
     <section class="home-section-container2"></section>
-    
+
     <!-- SECCION MESSAGES -->
     <h2 class="text3">Messages</h2>
     <div class="home-section-container3"></div>
-    
+
     <!-- SECCIÓN ANALITICS -->
     <h2 class="text4">Analitics</h2>
     <section class="home-section-container4"></section>
-    
+
     <!-- SECCIÓN FILES-->
     <h2 class="text5">Files</h2>
     <section class="home-section-container5"></section>
-    
+
     <!-- SECCION ORDER -->
     <h2 class="text6">Order</h2>
     <section class="home-section-container6"></section>
-    
+
     <!-- SECCION SAVED -->
     <h2 class="text7">Saved</h2>
     <section class="home-section-container7"></section>
-    
+
     <!-- SECCION  SETTINGS -->
     <h2 class="text8">Settings</h2>
     <section class="home-section-container8"></section>
-    
+
   </main>
 
   <script type="text/javascript" src="javascript/index.js"></script>
   <script type="text/javascript" src="javascript/index2.js"></script>
-  
+
 
 </body>
 
