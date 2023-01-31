@@ -383,22 +383,24 @@ body {
   cursor: pointer;
 }
 .home-section .text1 div li {
-  display: none;
-  justify-content: space-between;
+  display: grid;
+  align-content: space-between;
+  row-gap: 5px;
   padding: 1px;
   margin-top: 8px;
   margin-left: -5px;
+  background: #12111d86;
   border-radius: 5px;
   transition: all 0.5s ease;
 }
 .home-section .text1 div li i {
   display: flex;
   font-size: 25px;
-  text-align: left;
-  margin: 0 0 10px 0;
+  padding-left: 5px;
   color: #7c7979;
   box-shadow: 0 0 15px #000;
-  background: #12111d52;
+  background: #12111d86;
+  border-radius: 5px;
   transition: zise 0.5s ease;
 }
 .home-section .text1 div li i:hover {
