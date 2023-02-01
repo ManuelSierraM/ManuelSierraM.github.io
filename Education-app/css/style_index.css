@@ -383,7 +383,7 @@ body {
   cursor: pointer;
 }
 .home-section .text1 div li {
-  display: grid;
+  display: none;
   align-content: space-between;
   row-gap: 5px;
   padding: 1px;
