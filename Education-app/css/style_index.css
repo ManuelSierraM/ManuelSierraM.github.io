@@ -385,15 +385,20 @@ body {
 .home-section .text1 div li {
   display: none;
   align-content: space-between;
-  overflow: scroll;     
+  overflow: scroll;
   padding: 1px;
   max-width: 130px;
-  max-height:110px;
+  max-height: 110px;
   margin-top: 8px;
-  margin-left: -5px;  
+  margin-left: -5px;
   background: #12111d86;
   border-radius: 5px;
   transition: all 0.5s ease;
+}
+.home-section .text1 div li::-webkit-scrollbar {
+  background: transparent;
+  width: 2px;
+  height: 2px;
 }
 .home-section .text1 div li i {
   display: flex;
@@ -420,17 +425,17 @@ body {
   margin-left: -23px;
   margin-right: 8px;
 }
-.home-section .text1 div li i:nth-last-child(1){
-    position: sticky;
-    right: 0;
-    bottom: 0;
-    color: #bdbdad;    
-    font-size: 20px;
-    align-self: center;
-    padding: 0;
-    box-shadow: none;    
-    pointer-events: none;
-    background: none;
+.home-section .text1 div li i:nth-last-child(1) {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  color: #bdbdad;
+  font-size: 20px;
+  align-self: center;
+  padding: 0;
+  box-shadow: none;
+  pointer-events: none;
+  background: none;
 }
 
 .home-section-container1 {
@@ -653,10 +658,10 @@ body {
   }
   .home-section .text1 div li {
     flex-direction: column;
-    row-gap: 5px; 
+    row-gap: 5px;
   }
-  .home-section .text1 div li i:nth-last-child(1){
-      transform: rotate(90deg);
+  .home-section .text1 div li i:nth-last-child(1) {
+    transform: rotate(90deg);
   }
   .home-section-container1 {
     position: fixed;
