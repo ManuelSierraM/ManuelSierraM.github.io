@@ -13,46 +13,6 @@ body {
   overflow: hidden;
   pointer-events: none;
 }
-html #under-work {
-  display: inline-block;
-  position: fixed;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-  display: block;
-}
-header img {
-  max-width: 500px;
-  max-height: 500px;
-}
-article {
-  text-align: justify;
-}
-footer {
-  display: flex;
-  color: darkblue;
-  font-size: larger;
-  font-weight: bold;
-  position: relative;
-  bottom: 0;
-  flex-direction: column;
-  background-color: rgb(4, 172, 4);
-}
-/* Google Font Link */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  text-align: center;
-  background-color: rgb(0, 76, 139);
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  pointer-events: none;
-}
 #under-work {
   display: block;
   position: fixed;
