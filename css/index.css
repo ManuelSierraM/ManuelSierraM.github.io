@@ -12,11 +12,9 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
-  background-image: url("https://www.techyon.es/media/news/web-developer-principales-responsabilidades-y-competencias_1650467356_100.jpg");
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
-  position: relative;
+  background: url("https://www.campustraining.es/wp-content/uploads/2021/09/desarrollador-web.jpg")
+    no-repeat top fixed;
+  background-size: cover;
   text-align: center;
   padding: 5px;
 }
