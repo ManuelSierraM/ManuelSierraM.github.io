@@ -12,8 +12,8 @@
   box-sizing: border-box;
 }
 body {
-  background: url("https://www.campustraining.es/wp-content/uploads/2021/09/desarrollador-web.jpg")
-    no-repeat top fixed;
+  background: url("https://i.blogs.es/afb1eb/1366_2000/840_560.jpg") no-repeat
+    top fixed;
   background-size: cover;
   text-align: center;
   padding: 5px;
@@ -32,7 +32,7 @@ h1 {
 }
 h1 + label {
   color: var(--color_sec_titles);
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ section {
   box-shadow: 0 -5px 10px black;
   margin: -5px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   background: rgba(0, 0, 0, 0.871);
 }
 h2 {
@@ -81,12 +81,12 @@ h2 {
 /* acerca de  */
 footer {
   display: flex;
+  position: relative;
+  flex-direction: column;
   color: darkblue;
   font-size: larger;
   font-weight: bold;
-  position: relative;
   margin: 5px -5px -5px;
   padding: 5px;
-  flex-direction: column;
   background-color: rgb(255, 145, 0);
 }
