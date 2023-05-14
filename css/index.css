@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
   --color_main_titles: orange;
-  --color_sec_titles: rgb(3 150 177);
+  --color_sec_titles: rgb(0, 217, 255);
   --main_texts: #ebe2c1;
 }
 
@@ -24,7 +24,7 @@ body {
   width: 14rem;
   height: 14rem;
   border-radius: 50% 50% 50% 50%;
-  margin: 0.8rem auto;
+  margin: 1.8rem auto;
   box-shadow: 0 0 15px black;
   object-fit: cover;
   object-position: top;
@@ -40,40 +40,39 @@ h1 + label {
 
 /* presentacion */
 article {
-  margin-top: 2rem;
   color: var(--main_texts);
-  text-align: justify;
+  margin: 2rem auto;
+  text-align: center;
   font-size: larger;
+  max-width: 50rem;
+  align-items: center;
 }
 
 /* seccion de proyectos */
 section {
   display: grid;
   box-shadow: 0 -5px 10px black;
-  margin: -5px;
+  margin: 17% -5px -5px -5px;
   padding: 5px;
   border-radius: 5px 5px 0 0;
-  background: rgba(0, 0, 0, 0.871);
+  background: rgba(0, 0, 0, 0.7);
 }
 h2 {
   color: var(--color_main_titles);
-  margin: 20px auto 10px;
-  z-index: 50;
+  margin: 10px auto 20px;
 }
 .proyects-container {
   display: grid;
-  position: relative;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, 14rem);
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 5px;
 }
 .proyect {
   display: flex;
+  background: top/cover url(/images/education-app.jpg);
+  border-radius: 10px;
   align-items: flex-end;
   justify-content: center;
-  border-radius: 10px;
-  background-image: url(/images/education-app.jpg);
-  background-size: 100% 100%;
 }
 .proyect a {
   text-decoration: none;
