@@ -18,6 +18,9 @@ body {
   text-align: center;
   padding: 5px;
 }
+body::-webkit-scrollbar {
+  width: 0;
+}
 
 /* perfil */
 .img-perfil {
@@ -52,14 +55,14 @@ article {
 section {
   display: grid;
   box-shadow: 0 -5px 10px black;
-  margin: 17% -5px -5px -5px;
+  margin: 12% -5px -5px -5px;
   padding: 5px;
   border-radius: 5px 5px 0 0;
   background: rgba(0, 0, 0, 0.7);
 }
 h2 {
   color: var(--color_main_titles);
-  margin: 10px auto 20px;
+  margin: 3px auto 13px;
 }
 .proyects-container {
   display: grid;
