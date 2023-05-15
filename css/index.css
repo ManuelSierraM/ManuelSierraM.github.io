@@ -89,10 +89,10 @@ footer {
   display: flex;
   position: relative;
   flex-direction: column;
-  color: darkblue;
+  color: var(--color_main_titles);
   font-size: larger;
   font-weight: bold;
   margin: 5px -5px -5px;
   padding: 5px;
-  background-color: rgb(255, 145, 0);
+  background: rgba(0, 0, 0, 0.8);
 }
