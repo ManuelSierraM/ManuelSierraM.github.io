@@ -1,5 +1,10 @@
 /* Google Font Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --color_main_titles: orange;
+  --color_sec_titles: rgb(0, 217, 255);
+  --main_texts: #ebe2c1;
+}
 
 * {
   margin: 0;
@@ -7,33 +12,87 @@
   box-sizing: border-box;
 }
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.blogs.es/afb1eb/1366_2000/840_560.jpg") no-repeat top fixed;
+  background-size: cover;
   text-align: center;
-  background-color: rgb(0, 76, 139);
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  pointer-events: none;
+  padding: 5px;
 }
-#under-work {
-  display: block;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  height: 100%;
+body::-webkit-scrollbar {
+  width: 0;
 }
-header img {
-  max-width: 500px;
-  max-height: 500px;
+
+/* perfil */
+.img-perfil {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50% 50% 50% 50%;
+  margin: 1.8rem auto;
+  box-shadow: 0 0 15px black;
+  object-fit: cover;
+  object-position: top;
 }
+h1 {
+  color: var(--color_main_titles);
+}
+h1 + label {
+  color: var(--color_sec_titles);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* presentacion */
 article {
-  text-align: justify;
+  color: var(--main_texts);
+  margin: 2rem auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 50rem;
+  align-items: center;
 }
+
+/* seccion de proyectos */
+section {
+  display: grid;
+  box-shadow: 0 -5px 10px black;
+  margin: 12% -5px -5px -5px;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+h2 {
+  color: var(--color_main_titles);
+  margin: 3px auto 13px;
+}
+.proyects-container {
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 5px;
+}
+.proyect {
+  display: flex;
+  background: top/cover url(/images/education-app.jpg);
+  border-radius: 10px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.proyect a {
+  text-decoration: none;
+  color: var(--color_sec_titles);
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* acerca de  */
 footer {
   display: flex;
-  color: darkblue;
+  position: relative;
+  flex-direction: column;
+  color: var(--color_main_titles);
   font-size: larger;
   font-weight: bold;
-  position: relative;
-  bottom: 0;
-  flex-direction: column;
-  background-color: rgb(4, 172, 4);
+  margin: 5px -5px -5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
 }
