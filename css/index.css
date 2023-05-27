@@ -73,7 +73,7 @@ h2 {
 .proyect {
   background: top/cover url(/images/education-app.jpg);
   border-radius: 10px;
-  border: 0.5px solid black;
+  border: 0.5px solid rgb(82, 40, 10);
   transition: all 0.5 ease;
 }
 .proyect :hover {
