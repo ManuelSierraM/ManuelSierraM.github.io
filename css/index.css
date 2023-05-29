@@ -5,7 +5,6 @@
   --color_sec_titles: rgb(0, 217, 255);
   --main_texts: #ebe2c1;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -21,13 +20,12 @@ body {
 body::-webkit-scrollbar {
   width: 0;
 }
-
 /* perfil */
 .img-perfil {
   width: 14rem;
   height: 14rem;
   border-radius: 50% 50% 50% 50%;
-  margin: 1.8rem auto;
+  margin: 1rem auto;
   box-shadow: 0 0 15px black;
   object-fit: cover;
   object-position: top;
@@ -42,27 +40,52 @@ h1 + label {
 }
 
 /* presentacion */
+main {
+  scroll-snap-type: y mandatory;
+}
 article {
   color: var(--main_texts);
-  margin: 2rem auto;
+  @media screen and (max-width: 420px) {
+    margin: 1.6rem auto;
+  }
+  margin: 4rem auto;
   text-align: center;
   font-size: larger;
   max-width: 50rem;
   align-items: center;
+  scroll-snap-align: center;
 }
 
 /* seccion de proyectos */
 section {
   display: grid;
   box-shadow: 0 -5px 10px black;
-  margin: 12% -5px -5px -5px;
-  padding: 5px;
+  margin: 10rem -5px -5px -5px;
+  padding: 0 5px 5px;
   border-radius: 5px 5px 0 0;
+  scroll-snap-align: center;
   background: rgba(0, 0, 0, 0.7);
+  @media screen and (max-width: 420px) {
+    border-top: 0.5px solid black;
+    margin-top: 0.8rem;
+    font-size: 15px;
+  }
+}
+section:hover {
+  position: sticky;
+  margin-top: -35.5rem;
+  z-index: 10;
+  @media screen and (max-width: 420px) {
+    margin-top: -39.8rem;
+    padding: 5px;
+  }
 }
 h2 {
+  position: sticky;
+  top: 10px;
   color: var(--color_main_titles);
   margin: 3px auto 13px;
+  pointer-events: fill;
 }
 .proyects-container {
   display: grid;
