@@ -11,13 +11,14 @@
 </head>
 
 <body>
-  <header><!---------------| perfil  |------------>
-    <img src="images/msm-perfil.jpg" alt="img-perfil" class="img-perfil">
-    <h1>MANUEL SIERRA MORENO</h1>
-    <label>Front-End Developer</label>
-  </header>
 
   <main>
+    <header><!---------------| perfil  |------------>
+      <img src="images/msm-perfil.jpg" alt="img-perfil" class="img-perfil">
+      <h1>MANUEL SIERRA MORENO</h1>
+      <label>Front-End Developer</label>
+    </header>
+
     <article><!---------------| presentacion  |------------>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ullam odio laudantium ipsa minus
         distinctio, quos itaque quibusdam quia dolor odit voluptatem iure ducimus enim illo. Alias dolore corporis eum.
@@ -27,8 +28,11 @@
       </p>
     </article>
 
+    <input type="checkbox" name="checkProyects" id="checkProyects">
     <section id="proyects-container">
-      <h2>PROYECTOS</h2><!---------------| seccion de proyectos  |------------>
+      <label class="label-h2" for="checkProyects">
+        <h2>PROYECTOS</h2><!---------------| seccion de proyectos  |------------>
+      </label>
       <div class="proyects-container">
         <div class="proyect">
           <a href="proyectos/Education-app/login_register.html" target="_blank">Education-app</a>

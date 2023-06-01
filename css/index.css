@@ -64,6 +64,7 @@ section {
   padding: 0 5px 5px;
   border-radius: 5px 5px 0 0;
   scroll-snap-align: center;
+  transition: margin 0.5s ease;
   background: rgba(0, 0, 0, 0.7);
   @media screen and (max-width: 420px) {
     border-top: 0.5px solid black;
@@ -71,7 +72,10 @@ section {
     font-size: 15px;
   }
 }
-section:hover {
+#checkProyects {
+  display: none;
+}
+#checkProyects:checked ~ section {
   position: sticky;
   margin-top: -35.5rem;
   z-index: 10;
@@ -80,12 +84,13 @@ section:hover {
     padding: 5px;
   }
 }
-h2 {
+.label-h2 {
   position: sticky;
   top: 10px;
   color: var(--color_main_titles);
   margin: 3px auto 13px;
-  pointer-events: fill;
+  z-index: 99;
+  text-shadow: 0 0 10px black;
 }
 .proyects-container {
   display: grid;
