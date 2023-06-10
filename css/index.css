@@ -77,11 +77,17 @@ section {
 }
 #checkProyects:checked ~ section {
   position: sticky;
-  margin-top: -35.5rem;
+  margin-top: -34rem;
   z-index: 10;
   @media screen and (max-width: 420px) {
-    margin-top: -39.8rem;
+    margin-top: -38.4rem;
     padding: 5px;
+  }
+}
+header:hover ~ #checkProyects:checked ~ section {
+  margin-top: 10rem;
+  @media screen and (max-width: 420px) {
+    margin-top: 0.8rem;
   }
 }
 .label-h2 {
