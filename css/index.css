@@ -17,7 +17,8 @@ body {
   text-align: center;
   padding: 5px;
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+section::-webkit-scrollbar {
   width: 0;
 }
 /* perfil */
@@ -59,14 +60,16 @@ article {
 /* seccion de proyectos */
 section {
   display: grid;
+  max-height: 48rem;
   box-shadow: 0 -5px 10px black;
   margin: 10rem -5px -5px -5px;
   padding: 0 5px 5px;
   border-radius: 5px 5px 0 0;
-  scroll-snap-align: center;
-  transition: margin 0.5s ease;
+  transition: 0.5s ease;
+  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.7);
   @media screen and (max-width: 420px) {
+    max-height: 34rem;
     border-top: 0.5px solid black;
     margin-top: 0.8rem;
     font-size: 15px;
@@ -75,23 +78,25 @@ section {
 #checkProyects {
   display: none;
 }
-#checkProyects:checked ~ section {
+#checkProyects:checked + section {
   position: sticky;
-  margin-top: -35.5rem;
-  z-index: 10;
+  margin-top: -34rem;
+  background: rgba(0, 0, 0, 0.8);
   @media screen and (max-width: 420px) {
-    margin-top: -39.8rem;
-    padding: 5px;
+    margin-top: -39rem;
   }
 }
 .label-h2 {
   position: sticky;
-  top: 10px;
+  top: 0;
   color: var(--color_main_titles);
   margin: 3px auto 13px;
-  z-index: 99;
-  text-shadow: 0 0 10px black;
+  z-index: 10;
 }
+.label-h2 h2 {
+  text-shadow: 0 2px 5px black;
+}
+
 .proyects-container {
   display: grid;
   grid-auto-rows: 22rem;
@@ -135,5 +140,5 @@ footer {
   font-weight: bold;
   margin: 5px -5px -5px;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
