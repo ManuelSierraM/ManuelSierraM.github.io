@@ -42,59 +42,53 @@ h1 + label {
 
 /* presentacion */
 main {
+  /*animacion al hacer  scroll */
   scroll-snap-type: y mandatory;
 }
 article {
   color: var(--main_texts);
-  @media screen and (max-width: 420px) {
-    margin: 1.6rem auto;
-  }
   margin: 4rem auto;
   text-align: center;
   font-size: larger;
   max-width: 50rem;
   align-items: center;
   scroll-snap-align: center;
+  @media screen and (max-width: 420px) {
+    margin: 1.6rem auto;
+  }
 }
 
 /* seccion de proyectos */
 section {
   display: grid;
   max-height: 48rem;
-  box-shadow: 0 -5px 10px black;
-  margin: 10rem -5px -5px -5px;
-  padding: 0 5px 5px;
+  margin: 9.7rem -5px 0;
   border-radius: 5px 5px 0 0;
-  transition: 0.5s ease;
   overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
   @media screen and (max-width: 420px) {
-    max-height: 34rem;
-    border-top: 0.5px solid black;
-    margin-top: 0.8rem;
-    font-size: 15px;
+    margin-top: 4.2rem;
   }
 }
 #checkProyects {
   display: none;
 }
 #checkProyects:checked + section {
-  position: sticky;
-  margin-top: -34rem;
-  background: rgba(0, 0, 0, 0.8);
+  margin-top: -34.4rem;
   @media screen and (max-width: 420px) {
-    margin-top: -39rem;
+    margin-top: -40.2rem;
   }
 }
 .label-h2 {
   position: sticky;
   top: 0;
   color: var(--color_main_titles);
-  margin: 3px auto 13px;
+  margin: 5px 40px 7px;
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px black;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 10;
-}
-.label-h2 h2 {
-  text-shadow: 0 2px 5px black;
 }
 
 .proyects-container {
@@ -102,6 +96,14 @@ section {
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  background: rgba(0, 0, 0, 0.6);
+  @media screen and (max-width: 420px) {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
+    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+  }
 }
 .proyect {
   background: top/cover url(/images/education-app.jpg);
@@ -123,11 +125,17 @@ section {
   padding-top: 19rem;
   backdrop-filter: blur(2px);
   transition: all 0.5s ease;
+  @media screen and (max-width: 420px) {
+    padding-top: 13rem;
+  }
 }
 .proyect a:hover {
   backdrop-filter: none;
   padding-top: 17rem;
   font-size: 24px;
+  @media screen and (max-width: 420px) {
+    padding-top: 11rem;
+  }
 }
 
 /* acerca de  */
@@ -138,7 +146,6 @@ footer {
   color: var(--color_main_titles);
   font-size: larger;
   font-weight: bold;
-  margin: 5px -5px -5px;
-  padding: 5px;
+  margin: auto -5px -5px;
   background: rgba(0, 0, 0, 0.9);
 }
