@@ -79,6 +79,12 @@ section {
     margin-top: -40.2rem;
   }
 }
+header:hover ~ #checkProyects:checked ~ section {
+  margin-top: 9.7rem;
+  @media screen and (max-width: 420px) {
+    margin-top: 4.2rem;
+  }
+}
 .label-h2 {
   position: sticky;
   top: 0;
