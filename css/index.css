@@ -68,7 +68,7 @@ section {
   background: rgba(0, 0, 0, 0.7);
   @media screen and (max-width: 420px) {
     border-top: 0.5px solid black;
-    margin-top: 0.8rem;
+    margin-top: calc(100vh - 40rem);
     font-size: 15px;
   }
 }
@@ -82,12 +82,6 @@ section {
   @media screen and (max-width: 420px) {
     margin-top: -38.4rem;
     padding: 5px;
-  }
-}
-header:hover ~ #checkProyects:checked ~ section {
-  margin-top: 10rem;
-  @media screen and (max-width: 420px) {
-    margin-top: 0.8rem;
   }
 }
 .label-h2 {
