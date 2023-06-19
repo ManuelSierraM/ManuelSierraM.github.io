@@ -10,6 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  width: 0;
+}
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://i.blogs.es/afb1eb/1366_2000/840_560.jpg") no-repeat top fixed;
@@ -17,16 +20,23 @@ body {
   text-align: center;
   padding: 5px;
 }
-body::-webkit-scrollbar,
-section::-webkit-scrollbar {
-  width: 0;
+main {
+  /*animacion al hacer  scroll */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+main section {
+  scroll-snap-align: start;
 }
 /* perfil */
 .img-perfil {
   width: 14rem;
   height: 14rem;
   border-radius: 50% 50% 50% 50%;
-  margin: 1rem auto;
+  margin: 2rem auto 1rem;
   box-shadow: 0 0 15px black;
   object-fit: cover;
   object-position: top;
@@ -41,13 +51,9 @@ h1 + label {
 }
 
 /* presentacion */
-main {
-  /*animacion al hacer  scroll */
-  scroll-snap-type: y mandatory;
-}
 article {
   color: var(--main_texts);
-  margin: 4rem auto;
+  margin: 5rem auto;
   text-align: center;
   font-size: larger;
   max-width: 50rem;
@@ -59,12 +65,12 @@ article {
 }
 
 /* seccion de proyectos */
-section {
+.proyects-secction {
   display: grid;
   max-height: 39.7rem;
-  margin: 9.7rem -5px 0;
+  margin: 3.4rem -5px 0;
   border-radius: 5px 5px 0 0;
-  overflow-y: scroll;
+  scroll-snap-stop: always;
   transition: 0.5s ease;
   @media screen and (max-width: 420px) {
     margin-top: 17.7rem;
@@ -101,6 +107,7 @@ section {
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 5px black;
+  scroll-snap-align: end;
   background: rgba(0, 0, 0, 0.6);
   @media screen and (max-width: 420px) {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
