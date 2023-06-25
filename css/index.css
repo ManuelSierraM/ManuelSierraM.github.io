@@ -57,7 +57,6 @@ article {
   font-size: larger;
   max-width: 50rem;
   align-items: center;
-  scroll-snap-align: center;
   @media screen and (max-width: 420px) {
     margin: 1.6rem auto;
   }
@@ -106,7 +105,6 @@ article {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 5px black;
-  scroll-snap-align: end;
   background: rgba(0, 0, 0, 0.6);
   @media screen and (max-width: 420px) {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
@@ -114,7 +112,7 @@ article {
   }
 }
 .proyect {
-  background: top/cover url(/images/education-app.jpg);
+  background: top/cover url(/proyectos/Education-app/imagenes/education-app.jpg);
   border-radius: 10px;
   border: 0.5px solid rgb(82, 40, 10);
   transition: all 0.5 ease;
@@ -131,16 +129,16 @@ article {
   width: 100%;
   height: 100%;
   padding-top: 19rem;
-  backdrop-filter: blur(2px);
-  transition: all 0.5s ease;
+  backdrop-filter: none;
+  transition: 0.5s ease;
   @media screen and (max-width: 420px) {
     padding-top: 13rem;
   }
 }
 .proyect a:hover {
-  backdrop-filter: none;
   padding-top: 17rem;
   font-size: 24px;
+  backdrop-filter: blur(3px);
   @media screen and (max-width: 420px) {
     padding-top: 11rem;
   }
