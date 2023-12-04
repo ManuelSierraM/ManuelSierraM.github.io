@@ -27,9 +27,9 @@ main {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
-main section {
+/* main section {
   scroll-snap-align: start;
-}
+} */
 /* perfil */
 .img-perfil {
   width: 14rem;
