@@ -54,11 +54,13 @@ article {
   color: var(--main_texts);
   margin: 5rem auto;
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
   max-width: 50rem;
   align-items: center;
   @media screen and (max-width: 420px) {
-    margin: 1.6rem auto;
+    margin: 0.6rem auto 0.5rem;
+    padding: 0 10px 0 10px;
+    font-size: larger;
   }
 }
 
@@ -66,12 +68,12 @@ article {
 .proyects-secction {
   display: grid;
   max-height: 39.7rem;
-  margin: 3.7rem -5px 0;
+  margin: 2.8rem -5px 0;
   border-radius: 5px 5px 0 0;
   scroll-snap-stop: always;
   transition: 0.5s ease;
   @media screen and (max-width: 420px) {
-    margin-top: 6.7rem;
+    margin-top: 0;
     max-height: 53.4rem;
   }
 }
