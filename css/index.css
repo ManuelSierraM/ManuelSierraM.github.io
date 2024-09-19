@@ -58,7 +58,7 @@ article {
   max-width: 50rem;
   align-items: center;
   @media screen and (max-width: 420px) {
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 0 10px 0 10px;
     font-size: larger;
   }
@@ -73,7 +73,7 @@ article {
   scroll-snap-stop: always;
   transition: 0.5s ease;
   @media screen and (max-width: 420px) {
-    margin-top: 2.1rem;
+    margin-top: 3.5rem;
     max-height: 53.4rem;
   }
 }
