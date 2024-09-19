@@ -73,7 +73,7 @@ article {
   scroll-snap-stop: always;
   transition: 0.5s ease;
   @media screen and (max-width: 420px) {
-    margin-top: 3.5rem;
+    margin-top: 3.8rem;
     max-height: 53.4rem;
   }
 }
